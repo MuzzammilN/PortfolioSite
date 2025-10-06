@@ -24,7 +24,7 @@ Data Structures & Algorithms, Object-Oriented Programming, Analytical Programmin
 
 ## 💼 Professional Experience
 
-**Software Engineering Intern | MICROSOFT**  
+**Engineering Intern | MICROSOFT**  
 *May 2025 – Aug 2025*  
 - Built a prototype integrating telemetry data pipelines with large language models (LLMs) in C#/.NET and LangChain for automated diagnostics.  
 - Implemented data ingestion and visualization workflows using Grafana and internal monitoring systems.  
