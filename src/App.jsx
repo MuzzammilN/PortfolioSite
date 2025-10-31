@@ -7,127 +7,14 @@ import bgVideo from "./images/bg.mp4"
 import javaSVG from "./assets/java.svg"
 import gsap from 'gsap';
 import Copy from './components/Copy'
+import { ReactLenis, useLenis } from 'lenis/react'
 
 function App() {
-  const techRowRef = useRef(null);
-
-useEffect(() => {
-  const row = techRowRef.current;
-  const rowWidth = row.scrollWidth / 2; 
-  gsap.to(row, {
-    x: `-=${rowWidth}px`, 
-    ease: "linear",
-    duration: 20,         
-    repeat: -1,
-    modifiers: {
-      x: gsap.utils.unitize(x => parseFloat(x) % -rowWidth)
-    }
-  });
-}, []);
-
-
-
-const techBadges = [
-  {
-    name: "TypeScript",
-    src: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
-  },
-  {
-    name: "JavaScript",
-    src: "https://img.shields.io/badge/JavaScript-F7E017?style=for-the-badge&logo=javascript&logoColor=black",
-  },
-  {
-    name: "C++",
-    src: "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white",
-  },
-  {
-    name: "Java",
-    src: "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white",
-  },
-  {
-    name: "Python",
-    src: "https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-  },
-  {
-    name: "SQL",
-    src: "https://img.shields.io/badge/SQL-316192?style=for-the-badge&logo=postgresql&logoColor=white",
-  },
-  {
-    name: "React",
-    src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-  },
-  {
-    name: "TailwindCSS",
-    src: "https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
-  },
-  {
-    name: "Spring Boot",
-    src: "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white",
-  },
-  {
-    name: "Node.js",
-    src: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
-  },
-  {
-    name: "Express.js",
-    src: "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge",
-  },
-  {
-    name: "Bootstrap",
-    src: "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
-  },
-  {
-    name: "Git",
-    src: "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white",
-  },
-  {
-    name: "GitHub",
-    src: "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
-  },
-  {
-    name: "Docker",
-    src: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
-  },
-  {
-    name: "AWS",
-    src: "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white",
-  },
-  {
-    name: "VS Code",
-    src: "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visualstudiocode&logoColor=white",
-  },
-  {
-    name: "IntelliJ IDEA",
-    src: "https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white",
-  },
-  {
-    name: "Maven",
-    src: "https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white",
-  },
-  {
-    name: "Firebase",
-    src: "https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black",
-  },
-  {
-    name: "MongoDB",
-    src: "https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white",
-  },
-  {
-    name: "MySQL",
-    src: "https://img.shields.io/badge/MySQL-00618A?style=for-the-badge&logo=mysql&logoColor=white",
-  },
-  {
-    name: "PostgreSQL",
-    src: "https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white",
-  },
-];
-
-  const animations = []
- 
+     const lenis = useLenis((lenis) => {
+     console.log(lenis)});
   const [buttonsVisible, setButtonsVisible] = useState([false, false]);
 
   useEffect(() => {
-    // Stagger button fade-in
     const timers = [
       setTimeout(() => setButtonsVisible([true, false]), 2000),
       setTimeout(() => setButtonsVisible([true, true]), 2000),
@@ -143,7 +30,7 @@ const techBadges = [
     loop
     muted
     playsInline
-    className='absolute top-0 left-0 w-full h-full object-cover'
+    className='absolute top-0 left-0 w-screen h-full object-cover'
   >
     <source src={bgVideo} type='video/mp4' />
   </video>
@@ -161,7 +48,7 @@ const techBadges = [
     <h2 className='mt-2 text-2xl font-Poppins font-light lg:text-2xl  hover:text-amber-300 ease-in-out duration-700'>Software Engineer</h2>
     </Copy>
     <Copy animateOnScroll={false} delay={1.5}>
-    <h3 className='mt-6 text-md lg:text-md  hover:text-amber-300 ease-in-out duration-700'>building dreams with passion fueled by oxygen : ) </h3>
+    <h3 className='mt-6 text-md lg:text-md  hover:text-amber-300 ease-in-out duration-700 '>building dreams with passion fueled by oxygen : ) </h3>
     </Copy>
 
 
@@ -242,21 +129,9 @@ const techBadges = [
     Scroll Down
   </div>
     
-
   </div>
 </div>
 
-
-<div className="relative overflow-hidden w-screen py-4 text-center bg-black">
-  <div ref={techRowRef} className="flex whitespace-nowrap space-x-4">
-    {techBadges.map((i, idx) => (
-      <img key={idx} src={i.src} alt={i.name} className="inline-block opacity-60 hover:opacity-100 transition-all duration-300" />
-    ))}
-    {techBadges.map((i, idx) => ( //idx is index and i the actual value
-      <img key={techBadges.length + idx} src={i.src} alt={i.name} className="inline-block opacity-60 hover:opacity-100 transition-all duration-300" />
-    ))}
-  </div>
-</div>
 
 
     </>

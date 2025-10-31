@@ -74,3 +74,14 @@ body, html {
 }
 
 
+@font-face {
+      font-family: 'Islas'; /* Choose a unique name */
+      src: url('../src/images/IslasMalvinas-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap; /* Optional: controls font loading behavior */
+    }
+
+@theme {
+  --font-Islas: 'Islas', sans-serif;
+}
