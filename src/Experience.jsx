@@ -50,9 +50,45 @@ const Experience = () => {
   Applied the Model Context Protocol (MCP) to extend LLM context awareness for telemetry-driven insights.<br />
   Collaborated with the telemetry platform team with the goal of productionizing the prototype.
 </motion.p>
-<motion.div>
-  
+<motion.div
+  className="flex flex-row flex-wrap space-x-6 space-y-2"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.0, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  <img
+    src="https://img.shields.io/badge/C%23-181717?style=for-the-badge&logo=c-sharp&logoColor=white"
+    alt="C#"
+    className="w-12 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/JavaScript-181717?style=for-the-badge&logo=javascript&logoColor=white"
+    alt="JavaScript"
+    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/TypeScript-181717?style=for-the-badge&logo=typescript&logoColor=white"
+    alt="TypeScript"
+    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/MySQL-181717?style=for-the-badge&logo=mysql&logoColor=white"
+    alt="SQL"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/React-181717?style=for-the-badge&logo=react&logoColor=white"
+    alt="React"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/TailwindCSS-181717?style=for-the-badge&logo=tailwind-css&logoColor=white"
+    alt="TailwindCSS"
+    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
 </motion.div>
+
 
     </li>
     <li className="mb-10 ms-4">
@@ -79,6 +115,56 @@ Collaborated with Senior Engineers in converting customer requirements into IT A
 Actively engaged in code reviews and design discussions, learning industry best practices for system design and
 coding standards.<br />
 Automated repetitive tasks utilizing Python, reducing manual effort by 70% and increasing efficiency<br /></motion.p>
+<motion.div
+  className="flex flex-row flex-wrap space-x-6 space-y-2"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.0, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  <img
+    src="https://img.shields.io/badge/IBM-181717?style=for-the-badge&logo=ibm&logoColor=white"
+    alt="IBM"
+    className="w-15 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/IBM_DOORS-181717?style=for-the-badge&logo=ibm&logoColor=white"
+    alt="IBM DOORS"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Siemens-181717?style=for-the-badge&logo=siemens&logoColor=white"
+    alt="Siemens"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Polarion-181717?style=for-the-badge&logo=siemens&logoColor=white"
+    alt="Polarion"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Python-181717?style=for-the-badge&logo=python&logoColor=white"
+    alt="Python"
+    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/System_Design-181717?style=for-the-badge&logo=microsoft&logoColor=white"
+    alt="System Design"
+    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Architecture-181717?style=for-the-badge&logo=azure-architecture-center&logoColor=white"
+    alt="Architecture"
+    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Code_Review-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="Code Review"
+    className="w-36 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+</motion.div>
+
+
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -102,6 +188,46 @@ Automated repetitive tasks utilizing Python, reducing manual effort by 70% and i
 >Developed an AR/VR teaching application using Unity and C# to support first-year students in learning Python, transforming theoretical concepts into an immersive, interactive environment.<br />
 Built web forms using Node.js and Express.js, allowing students to input data, which is then processed and communicated to the AR/VR application to create an engaging learning experience. <br />
 Enhanced user interaction with Tailwind CSS for intuitive web interfaces, streamlining the transition between website inputs and AR/VR visualizations <br /></motion.p>
+<motion.div
+  className="flex flex-row flex-wrap space-x-6 space-y-2"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.0, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  <img
+    src="https://img.shields.io/badge/Unity-181717?style=for-the-badge&logo=unity&logoColor=white"
+    alt="Unity"
+    className="rounded-lg w-20 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/C%23-181717?style=for-the-badge&logo=c-sharp&logoColor=white"
+    alt="C#"
+    className="rounded-lg w-12 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Python-181717?style=for-the-badge&logo=python&logoColor=white"
+    alt="Python"
+    className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Node.js-181717?style=for-the-badge&logo=node.js&logoColor=white"
+    alt="Node.js"
+    className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Express.js-181717?style=for-the-badge&logo=express&logoColor=white"
+    alt="Express.js"
+    className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/TailwindCSS-181717?style=for-the-badge&logo=tailwind-css&logoColor=white"
+    alt="TailwindCSS"
+    className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+</motion.div>
+
+
     </li>
         <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -127,6 +253,22 @@ Developed, configured and deployed through network designs in order to successfu
  Managed VMware vSphere environments, including server virtualization and resource allocation for optimal performance.<br />
 Worked on technical/engineering activities to establish feasible system designs and subsystem requirements, utilizing extensive analysis and simulations.<br />
  </motion.p>
+<motion.div
+  className="flex flex-row flex-wrap gap-4"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.0, ease: 'easeOut' }}
+  viewport={{ once: true }}
+>
+  <img src="https://img.shields.io/badge/VMware-181717?style=for-the-badge&logo=vmware&logoColor=white" alt="VMware" className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+  <img src="https://img.shields.io/badge/vSphere-181717?style=for-the-badge&logo=vmware&logoColor=white" alt="vSphere" className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+  <img src="https://img.shields.io/badge/Python-181717?style=for-the-badge&logo=python&logoColor=white" alt="Python" className="rounded-lg w-26 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+  <img src="https://img.shields.io/badge/Bash-181717?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" className="rounded-lg w-20 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+  <img src="https://img.shields.io/badge/Networking-181717?style=for-the-badge&logo=cisco&logoColor=white" alt="Networking" className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+  <img src="https://img.shields.io/badge/System_Design-181717?style=for-the-badge&logo=microsoft&logoColor=white" alt="System Design" className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" />
+</motion.div>
+
+
     </li>
       <li className="ms-4">
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -152,6 +294,46 @@ Developed, configured and deployed through network designs in order to successfu
  Managed VMware vSphere environments, including server virtualization and resource allocation for optimal performance.<br />
 Worked on technical/engineering activities to establish feasible system designs and subsystem requirements, utilizing extensive analysis and simulations.<br />
  </motion.p>
+
+<motion.div
+  className="flex flex-row flex-wrap space-x-6 space-y-2 "
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.0, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  <img
+    src="https://img.shields.io/badge/Scripting-181717?style=for-the-badge&logo=gnubash&logoColor=white"
+    alt="Scripting"
+    className="rounded-lg w-32 h- opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Automation-181717?style=for-the-badge&logo=python&logoColor=white"
+    alt="Automation"
+    className="rounded-lg w-32 h-8  opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Network_Design-181717?style=for-the-badge&logo=cisco&logoColor=white"
+    alt="Network Design"
+    className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200" 
+  />
+  <img
+    src="https://img.shields.io/badge/VMware_vSphere-181717?style=for-the-badge&logo=vmware&logoColor=white"
+    alt="VMware vSphere"
+    className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/Virtualization-181717?style=for-the-badge&logo=virtualbox&logoColor=white"
+    alt="Virtualization"
+    className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+  <img
+    src="https://img.shields.io/badge/System_Design-181717?style=for-the-badge&logo=microsoft&logoColor=white"
+    alt="System Design"
+    className="rounded-lg w-32 h-8 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+  />
+</motion.div>
+
 </li>  
 </ol>
 </div>
