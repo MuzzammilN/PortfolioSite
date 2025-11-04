@@ -87,6 +87,17 @@ const Experience = () => {
     alt="TailwindCSS"
     className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
   />
+<img
+  src="https://img.shields.io/badge/Azure-181717?style=for-the-badge&logo=microsoftazure&logoColor=white"
+  alt="Microsoft Azure"
+  className="w-18 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+/>
+
+<img
+  src="https://img.shields.io/badge/Grafana-181717?style=for-the-badge&logo=grafana&logoColor=white"
+  alt="Grafana"
+  className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+/>
 </motion.div>
 
 
