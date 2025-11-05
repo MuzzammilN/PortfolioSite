@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ReactLenis, useLenis } from 'lenis/react';
 import { motion } from "framer-motion";
-
+import msft from "./assets/microsoft_logo.jpg";
 
 
 
@@ -27,78 +27,82 @@ const Experience = () => {
         <div 
         className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" ></div>
         <motion.time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"      
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} >May 2025 - August 2025</motion.time>
-        <motion.h3 className="text-lg font-semibold text-gray-900 dark:text-white"
-             initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} 
-  >Software Engineer Intern - Microsoft</motion.h3>
-<motion.p
-  className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} 
->
-  Built a prototype integrating telemetry data pipelines with large language models (LLMs) using C#/.NET, React, and JavaScript, enabling automated diagnostics and impact analysis.<br />
-  Designed and consumed REST APIs in .NET, implementing authentication mechanisms to ensure secure and reliable data exchange between telemetry services and diagnostic modules.<br />
-  Implemented data ingestion and visualization workflows with Grafana and internal monitoring systems to track model health and system performance.<br />
-  Applied the Model Context Protocol (MCP) to extend LLM context awareness for telemetry-driven insights.<br />
-  Collaborated with the telemetry platform team with the goal of productionizing the prototype.
-</motion.p>
-<motion.div
-  className="flex flex-row flex-wrap space-x-6 space-y-2"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }}
->
-  <img
-    src="https://img.shields.io/badge/C%23-181717?style=for-the-badge&logo=c-sharp&logoColor=white"
-    alt="C#"
-    className="w-12 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-  <img
-    src="https://img.shields.io/badge/JavaScript-181717?style=for-the-badge&logo=javascript&logoColor=white"
-    alt="JavaScript"
-    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-  <img
-    src="https://img.shields.io/badge/TypeScript-181717?style=for-the-badge&logo=typescript&logoColor=white"
-    alt="TypeScript"
-    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-  <img
-    src="https://img.shields.io/badge/MySQL-181717?style=for-the-badge&logo=mysql&logoColor=white"
-    alt="SQL"
-    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-  <img
-    src="https://img.shields.io/badge/React-181717?style=for-the-badge&logo=react&logoColor=white"
-    alt="React"
-    className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-  <img
-    src="https://img.shields.io/badge/TailwindCSS-181717?style=for-the-badge&logo=tailwind-css&logoColor=white"
-    alt="TailwindCSS"
-    className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-  />
-<img
-  src="https://img.shields.io/badge/Azure-181717?style=for-the-badge&logo=microsoftazure&logoColor=white"
-  alt="Microsoft Azure"
-  className="w-18 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-/>
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut" }}
+          viewport={{ once: true }} >
+          May 2025 - August 2025
+        </motion.time>
 
-<img
-  src="https://img.shields.io/badge/Grafana-181717?style=for-the-badge&logo=grafana&logoColor=white"
-  alt="Grafana"
-  className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
-/>
-</motion.div>
+        <motion.div className="flex flex-row space-x-2 text-lg font-semibold text-gray-900 dark:text-white"
+             initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, ease: "easeOut" }}
+              viewport={{ once: true }}>
+              <h3>Software Engineer Intern - Microsoft</h3> <img src={msft} className='h-6 w-6'/></motion.div>
+              <motion.p
+                className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.0, ease: "easeOut" }}
+                viewport={{ once: true }}>
+                Built a prototype integrating telemetry data pipelines with large language models (LLMs) using C#/.NET, React, and JavaScript, enabling automated diagnostics and impact analysis.<br />
+                Designed and consumed REST APIs in .NET, implementing authentication mechanisms to ensure secure and reliable data exchange between telemetry services and diagnostic modules.<br />
+                Implemented data ingestion and visualization workflows with Grafana and internal monitoring systems to track model health and system performance.<br />
+                Applied the Model Context Protocol (MCP) to extend LLM context awareness for telemetry-driven insights.<br />
+                Collaborated with the telemetry platform team with the goal of productionizing the prototype.
+              </motion.p>
+
+        <motion.div
+        className="flex flex-row flex-wrap space-x-6 space-y-2"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, ease: "easeOut" }}
+        viewport={{ once: true }}>
+
+                <img
+                  src="https://img.shields.io/badge/C%23-181717?style=for-the-badge&logo=c-sharp&logoColor=white"
+                  alt="C#"
+                  className="w-12 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+                <img
+                  src="https://img.shields.io/badge/JavaScript-181717?style=for-the-badge&logo=javascript&logoColor=white"
+                  alt="JavaScript"
+                  className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+                <img
+                  src="https://img.shields.io/badge/TypeScript-181717?style=for-the-badge&logo=typescript&logoColor=white"
+                  alt="TypeScript"
+                  className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+                <img
+                  src="https://img.shields.io/badge/MySQL-181717?style=for-the-badge&logo=mysql&logoColor=white"
+                  alt="SQL"
+                  className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+                <img
+                  src="https://img.shields.io/badge/React-181717?style=for-the-badge&logo=react&logoColor=white"
+                  alt="React"
+                  className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+                <img
+                  src="https://img.shields.io/badge/TailwindCSS-181717?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                  alt="TailwindCSS"
+                  className="w-32 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+                />
+              <img
+                src="https://img.shields.io/badge/Azure-181717?style=for-the-badge&logo=microsoftazure&logoColor=white"
+                alt="Microsoft Azure"
+                className="w-18 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+              />
+
+              <img
+                src="https://img.shields.io/badge/Grafana-181717?style=for-the-badge&logo=grafana&logoColor=white"
+                alt="Grafana"
+                className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
+              />
+        </motion.div>
+        
 
 
     </li>
