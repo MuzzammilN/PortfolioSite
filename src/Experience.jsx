@@ -3,8 +3,10 @@ import React from 'react';
 import { ReactLenis, useLenis } from 'lenis/react';
 import { motion } from "framer-motion";
 import msft from "./assets/microsoft_logo.jpg";
-
-
+import hitachi from "./assets/hitachi_logo.jpg";
+import morguard from "./assets/morguard_logo.jpg";
+import thales from "./assets/thales_logo.jpg";
+import york from "./assets/yorku_logo.jpg";
 
 const Experience = () => {
     const lenis = useLenis((lenis) => {
@@ -34,12 +36,12 @@ const Experience = () => {
           May 2025 - August 2025
         </motion.time>
 
-        <motion.div className="flex flex-row space-x-2 text-lg font-semibold text-gray-900 dark:text-white"
+        <motion.div className="flex flex-row space-x-4 items-center text-lg font-semibold text-gray-900 dark:text-white mb-2"
              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.0, ease: "easeOut" }}
               viewport={{ once: true }}>
-              <h3>Software Engineer Intern - Microsoft</h3> <img src={msft} className='h-6 w-6'/></motion.div>
+              <h3>Software Engineer Intern - <span className='font-light'>Microsoft</span></h3> <img src={msft} className='h-8 w-8'/></motion.div>
               <motion.p
                 className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
                 initial={{ opacity: 0, y: 30 }}
@@ -102,10 +104,9 @@ const Experience = () => {
                 className="w-25 h-8 rounded-lg opacity-75 hover:opacity-100 transition ease-in-out duration-200"
               />
         </motion.div>
-        
-
-
     </li>
+
+
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <motion.time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"      
@@ -113,12 +114,13 @@ const Experience = () => {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} >September 2024 - May 2025</motion.time>
-                <motion.h3 className="text-lg font-semibold text-gray-900 dark:text-white"
-             initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} 
-  >System Design Intern</motion.h3>
+                <motion.div className="text-lg flex flex-row items-center space-x-4 font-semibold text-gray-900 dark:text-white mb-2"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.0, ease: "easeOut" }}
+                  viewport={{ once: true }}>
+                  <h3>System Design Intern - <span className='font-light'>Hitachi</span></h3><img src={hitachi} className='h-10 w-10 object-contain'/>
+                </motion.div>
       <motion.p
   className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
   initial={{ opacity: 0, y: 30 }}
@@ -188,12 +190,12 @@ Automated repetitive tasks utilizing Python, reducing manual effort by 70% and i
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} >May 2024 - August 2024</motion.time>
-                <motion.h3 className="text-lg font-semibold text-gray-900 dark:text-white"
+                <motion.div className="flex flex-row items-center space-x-4 text-lg font-semibold text-gray-900 dark:text-white mb-2"
              initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} 
-  >Research AR & VR Development</motion.h3>
+  ><h3>Research AR & VR - <span className='font-light'>York University</span></h3> <img  src={york} className='h-10 w-10'/></motion.div>
         <motion.p
   className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
   initial={{ opacity: 0, y: 30 }}
@@ -251,12 +253,12 @@ Enhanced user interaction with Tailwind CSS for intuitive web interfaces, stream
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} >September 2023 - December 2023</motion.time>
-                <motion.h3 className="text-lg font-semibold text-gray-900 dark:text-white"
+                <motion.div className="flex flex-row items-center space-x-4 mb-2 text-lg font-semibold text-gray-900 dark:text-white"
              initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} 
-  >Network Engineer Intern</motion.h3>
+  ><h3>Network Engineer Intern - <span className='font-light'>Thales</span></h3> <img src={thales} className='w-10 h-10 '/></motion.div>
         <motion.p
   className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
   initial={{ opacity: 0, y: 30 }}
@@ -292,23 +294,26 @@ Worked on technical/engineering activities to establish feasible system designs 
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.0, ease: "easeOut" }}
   viewport={{ once: true }} >May 2023 - Aug 2023</motion.time>
-              <motion.h3 className="text-lg font-semibold text-gray-900 dark:text-white"
-             initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} 
-  >IT Analyst Intern</motion.h3>
+              <motion.div className="flex flex-row items-center space-x-4 mb-2 text-lg font-semibold text-gray-900 dark:text-white"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.0, ease: "easeOut" }}
+                viewport={{ once: true }} >
+    
+              <h3>IT Analyst Intern - <span className='font-light'>Morguard</span></h3><img src={morguard} className='h-10 w-10'/>
+              </motion.div>
+
       <motion.p
-  className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
-  viewport={{ once: true }} 
->Created and modified scripts to manage certain alerts which increased customer utilization by more than 90% <br />
-Developed, configured and deployed through network designs in order to successfully<br />
- Managed VMware vSphere environments, including server virtualization and resource allocation for optimal performance.<br />
-Worked on technical/engineering activities to establish feasible system designs and subsystem requirements, utilizing extensive analysis and simulations.<br />
- </motion.p>
+        className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, ease: "easeOut" }}
+        viewport={{ once: true }}>
+        Created and modified scripts to manage certain alerts which increased customer utilization by more than 90% <br />
+        Developed, configured and deployed through network designs in order to successfully<br />
+        Managed VMware vSphere environments, including server virtualization and resource allocation for optimal performance.<br />
+        Worked on technical/engineering activities to establish feasible system designs and subsystem requirements, utilizing extensive analysis and simulations.<br />
+        </motion.p>
 
 <motion.div
   className="flex flex-row flex-wrap space-x-6 space-y-2 "
