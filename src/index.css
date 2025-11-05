@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 body {
-  background-color: black;
+  background-color: white;
 }
 @theme {
   --font-SixCaps: "Six Caps", sans-serif;
@@ -92,3 +92,14 @@ body, html {
   --font-Islas: 'Islas', sans-serif;
 }
 
+
+
+/* For the entire page */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For a specific element */
+.my-element::-webkit-scrollbar {
+  display: none;
+}

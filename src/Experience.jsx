@@ -15,7 +15,7 @@ const Experience = () => {
   })
   return (
     <>
-<div className="bg-black h-screen w-screen font-Poppins font-bold text-white flex flex-col items-center">
+<div className="bg-black min-h-screen w-screen font-Poppins font-bold text-white flex flex-col items-center">
   <motion.h1
    className='text-3xl mt-10 font-MonoSig lg:text-5xl xl:text-5xl '
      initial={{ opacity: 0, y: 30 }}
