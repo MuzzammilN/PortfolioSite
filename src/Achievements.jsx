@@ -23,7 +23,7 @@ const Achievements = () => {
             whileInView={{opacity:1, y:0}}
             transition={{duration: 1.0, ease:"easeIn"}}
             viewport={{once: true}}
-            className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 my-5 mx-2'>
+            className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-[0_0_20px_5px_rgba(255,255,255,0.3)]  dark:bg-black dark:border-gray-700 my-5 mx-2 hover:-translate-y-3 transition-transform duration-400'>
                 <img src={stan} className='border rounded-xl'></img>
                 <h3 className='text-white font-Poppins mt-5 mx-2 mb-2'>Stanford University — Code in Place (Python Programming Certificate) </h3>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Completed Stanford University's Code in Place (April–June 2023), an introductory Python programming course based on CS106A, covering control flow, data structures, and graphics.</p>
@@ -35,7 +35,7 @@ const Achievements = () => {
             transition={{duration: 1.0, ease:"easeIn"}}
             viewport={{once: true}}
 
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 my-5 mx-2">
+            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 my-5 mx-2 shadow-[0_0_20px_5px_rgba(255,255,255,0.3)] hover:-translate-y-3 transition-transform duration-400">
                 <img src={ctf}></img>
                 <div className='flex flex-col just'>
                 <h3 className='text-white font-Poppins mt-5 mx-2 mb-2'>Microsoft Intern Capture The Flag </h3>
@@ -48,7 +48,7 @@ const Achievements = () => {
               whileInView={{opacity:1, y:0}}
               transition={{duration: 1.0, ease:"easeIn"}}
               viewport={{once: true}}
-            className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 my-5 mx-2'>
+            className='max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-black dark:border-gray-700 my-5 mx-2 shadow-[0_0_20px_5px_rgba(255,255,255,0.3)] hover:-translate-y-3 transition-transform duration-400'>
                 <img src={msfth} className='border rounded-xl'></img>
                 <h3 className='text-white font-Poppins mt-5 mx-2'>2nd Place @ Microsoft Intern hackathon </h3>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Microsoft Teams Extension which helps interns and new engineers connect with senior engineers and make new friends within the company, Integrated Large Language Models (LLMs )within teams to find individuals based on your interest.</p>
