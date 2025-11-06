@@ -4,11 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import Experience from './Experience.jsx'
 import Achievements from './Achievements.jsx'
+import Contact from './Contact.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App></App>
     <Experience></Experience>
     <Achievements></Achievements>
+    <Contact></Contact>
   </StrictMode>,
 )
