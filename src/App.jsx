@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { SiJavascript } from "react-icons/si";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './index.css'
 import bgVideo from "./images/bg.mp4"
 import javaSVG from "./assets/java.svg"
