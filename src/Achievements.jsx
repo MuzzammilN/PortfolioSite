@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import ctf from "./assets/CTF.png";
-import msfth from "./assets/intern Hackathon.jpg";
+import msfth from "./assets/Intern_Hackathon.jpg";
 import stan from "./assets/Stand.png";
 
 const Achievements = () => {
