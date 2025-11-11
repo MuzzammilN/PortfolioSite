@@ -26,7 +26,7 @@ const Achievements = () => {
             className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-[0_0_20px_5px_rgba(255,255,255,0.3)]  dark:bg-black dark:border-gray-700 my-5 mx-2 hover:-translate-y-3 transition-transform duration-400'>
                 <img src={stan} className='border rounded-xl'></img>
                 <h3 className='text-white font-Poppins mt-5 mx-2 mb-2'>Stanford University — Code in Place (Python Programming Certificate) </h3>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Completed Stanford University's Code in Place (April–June 2023), an introductory Python programming course based on CS106A, covering control flow, data structures, and graphics.</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Completed Stanford University's Code in Place (April–June 2023), an introductory Python programming course based on CS106A, covering control flow, data structures, and graphics.</p>
             </motion.div>
 
             <motion.div 
@@ -35,11 +35,11 @@ const Achievements = () => {
             transition={{duration: 1.0, ease:"easeIn"}}
             viewport={{once: true}}
 
-            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 my-5 mx-2 shadow-[0_0_20px_5px_rgba(255,255,255,0.3)] hover:-translate-y-3 transition-transform duration-400">
+            className="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 my-5 mx-2 shadow-[0_0_20px_5px_rgba(255,255,255,0.3)] hover:-translate-y-3 transition-transform duration-400">
                 <img src={ctf}></img>
                 <div className='flex flex-col just'>
                 <h3 className='text-white font-Poppins mt-5 mx-2 mb-2'>Microsoft Intern Capture The Flag </h3>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Participated in Microsoft’s Capture the Flag competition, gaining hands-on experience using Linux and its security tools to identify and exploit real-world vulnerabilities such as exposed API endpoints, open networks, data dumps, and Azure Active Directory misconfigurations. Demonstrated strong problem-solving skills by navigating various offensive security challenges, leveraging reconnaissance, enumeration, and privilege escalation techniques to successfully capture targeted flags.</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Participated in Microsoft’s Capture the Flag competition, gaining hands-on experience using Linux and its security tools to identify and exploit real-world vulnerabilities such as exposed API endpoints, open networks, data dumps, and Azure Active Directory misconfigurations. Demonstrated strong problem-solving skills by navigating various offensive security challenges, leveraging reconnaissance, enumeration, and privilege escalation techniques to successfully capture targeted flags.</p>
                 </div>
             </motion.div>
 
@@ -51,7 +51,7 @@ const Achievements = () => {
             className='max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-black dark:border-gray-700 my-5 mx-2 shadow-[0_0_20px_5px_rgba(255,255,255,0.3)] hover:-translate-y-3 transition-transform duration-400'>
                 <img src={msfth} className='border rounded-xl'></img>
                 <h3 className='text-white font-Poppins mt-5 mx-2'>2nd Place @ Microsoft Intern hackathon </h3>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Microsoft Teams Extension which helps interns and new engineers connect with senior engineers and make new friends within the company, Integrated Large Language Models (LLMs )within teams to find individuals based on your interest.</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-2">Microsoft Teams Extension which helps interns and new engineers connect with senior engineers and make new friends within the company, Integrated Large Language Models (LLMs )within teams to find individuals based on your interest.</p>
             </motion.div>
 
         </div>

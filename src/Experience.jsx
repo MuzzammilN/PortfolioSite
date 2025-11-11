@@ -24,8 +24,8 @@ const Experience = () => {
   viewport={{ once: true }} >Experience</motion.h1>
 
 
-<ol  className="relative border-s border-gray-200 dark:border-gray-700 mt-10 mx-5 lg:mx-40">                  
-    <li class="mb-10 ms-4">
+  <ol  className="relative border-s border-gray-200 dark:border-gray-700 mt-10 mx-5 lg:mx-40">                  
+  <li className="mb-10 ms-4">
         <div 
         className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" ></div>
         <motion.time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"      

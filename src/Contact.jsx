@@ -37,27 +37,27 @@ const Contact = () => {
     </motion.h1>
     </div>
 
-<form class="max-w-md mx-auto font-Poppins" onSubmit={handleSubmit} >
+<form className="max-w-md mx-auto font-Poppins" onSubmit={handleSubmit} >
 <motion.div 
         initial = {{opacity: 0, y: 30}}
         whileInView= {{ opacity: 1, y: 0}}
         transition={{duration: 1.0, ease:"easeOut"}}
         viewport={{once: true}}
-        class="mb-5">
-    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+    className="mb-5">
+  <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
     <input onChange={(e) => setFormValues({...Form, Name: e.target.value})} value={Form.Name}
-    type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='John Doe'required />
+    type="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='John Doe' required />
 </motion.div>
 
-  <motion.div class="mb-5"
+  <motion.div className="mb-5"
           initial = {{opacity: 0, y: 30}}
         whileInView= {{ opacity: 1, y: 0}}
         transition={{duration: 1.0, ease:"easeOut"}}
         viewport={{once: true}}
         >
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
     <input onChange={(e) => setFormValues({...Form, Email: e.target.value})} value={Form.Email}
-    type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+    type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
   </motion.div>
 
     <motion.div 
@@ -65,10 +65,10 @@ const Contact = () => {
         whileInView= {{ opacity: 1, y: 0}}
         transition={{duration: 1.0, ease:"easeOut"}}
         viewport={{once: true}}
-    class="mb-5">
-    <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Company</label>
+  className="mb-5">
+  <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Company</label>
     <input onChange={(e) => setFormValues({...Form, Company: e.target.value})} value={Form.Company}
-    type="company" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Company X" />
+    type="company" id="company" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Company X" />
   </motion.div>
 
 
@@ -77,10 +77,10 @@ const Contact = () => {
         whileInView= {{ opacity: 1, y: 0}}
         transition={{duration: 1.0, ease:"easeOut"}}
         viewport={{once: true}}
-        class="mb-5">
-  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+    className="mb-5">
+  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
   <textarea onChange={(e) => setFormValues({...Form, Description: e.target.value})} value={Form.Description}
-  id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Hi Muzzammil, I’m a recruiter and came across your profile — it looks impressive! I’d love to schedule a chat to discuss potential opportunities."></textarea>
+  id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Hi Muzzammil, I’m a recruiter and came across your profile — it looks impressive! I’d love to schedule a chat to discuss potential opportunities."></textarea>
   </motion.div>
 
     <motion.div 
@@ -89,7 +89,7 @@ const Contact = () => {
         transition={{duration: 1.0, ease:"easeOut"}}
         viewport={{once: true}}
     className='flex justify-center'>
-        <button type="submit" class="text-black px-auto bg-white hover:opacity-40 font-bold  focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white-700 dark:focus:ring-white-800 transition ease-in-out duration-300 mb-4">Submit</button>
+  <button type="submit" className="text-black px-auto bg-white hover:opacity-40 font-bold  focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white-700 dark:focus:ring-white-800 transition ease-in-out duration-300 mb-4">Submit</button>
     </motion.div>
   
 </form>
