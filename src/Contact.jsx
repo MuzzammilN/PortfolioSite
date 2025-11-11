@@ -37,7 +37,7 @@ const Contact = () => {
     </motion.h1>
     </div>
 
-<form className="max-w-md mx-auto font-Poppins" onSubmit={handleSubmit} >
+<form className="max-w-md mx-auto font-Poppins px-4" onSubmit={handleSubmit} >
 <motion.div 
         initial = {{opacity: 0, y: 30}}
         whileInView= {{ opacity: 1, y: 0}}
